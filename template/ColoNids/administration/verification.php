@@ -6,7 +6,7 @@ session_start();
 
 //var_dump($_POST);
 
-$objetPdo = new PDO('mysql:host=localhost;dbname=colonid','superadmin','H0l*kuY12M14/');
+$objetPdo = new PDO('mysql:host=localhost;dbname=colonid','admin','');
 
 $pdoStat = $objetPdo->prepare('SELECT * from client where mail=?');
 
