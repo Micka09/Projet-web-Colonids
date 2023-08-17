@@ -3,7 +3,7 @@
 
 //var_dump($_POST);
 
-$objetPdo = new PDO('mysql:host=localhost;dbname=colonid','superadmin','H0l*kuY12M14/');
+$objetPdo = new PDO('mysql:host=localhost;dbname=colonid','root','');
 
 $pdoStat = $objetPdo->prepare('INSERT INTO client VALUES (NULL, :prenom, :adresse, :cp, :ville, :mail, :numero, :mdp)');
 
